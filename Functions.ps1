@@ -104,3 +104,7 @@ function Invoke-GraphReport {
     }
     return $CloudUser
 }
+
+$Authscopes = @{}
+$Authscopes.Add("Vault", "https://vault.azure.net/.default")
+$Authscopes.Add("Graph", "https://graph.microsoft.com")
